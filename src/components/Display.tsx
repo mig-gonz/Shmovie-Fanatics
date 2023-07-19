@@ -1,6 +1,8 @@
 import { useContext } from "react";
 
 // import "./display.css";
+// make single card on mobile, add arrow button to see next movie for desktop and mobile.
+// reuse component, add different buttons for movie types and set to change state
 
 const Display = () => {
   //   const { movies } = useContext(stateContext);
