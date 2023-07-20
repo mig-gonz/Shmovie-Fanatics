@@ -15,14 +15,14 @@ const Footer = () => {
           <FaGithub className="mx-auto" size={25} />
         </a>
         <p>
-          This website uses the
+          This website uses the&nbsp;
           <a
             href="https://www.themoviedb.org/?language=en-US"
             className="beautiful-header"
           >
             TMDb API
           </a>
-          for movie data.
+          &nbsp;for movie data.
         </p>
       </div>
     </footer>
