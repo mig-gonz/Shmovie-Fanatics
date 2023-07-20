@@ -1,8 +1,9 @@
 import { FaGithub } from "react-icons/fa";
+import "../index.css";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-4 bg-base-200 text-base-content ">
+    <footer className="footer footer-center p-4 text-base-content">
       <div className="text-center py-4">
         <p className="text-white">
           &copy; {new Date().getFullYear()} SHMOVIE FANATICS {""}
@@ -14,9 +15,14 @@ const Footer = () => {
           <FaGithub className="mx-auto" size={25} />
         </a>
         <p>
-          This website uses the{" "}
-          <a href="https://www.themoviedb.org/?language=en-US">TMDb API</a> for
-          movie data.
+          This website uses the
+          <a
+            href="https://www.themoviedb.org/?language=en-US"
+            className="beautiful-header"
+          >
+            TMDb API
+          </a>
+          for movie data.
         </p>
       </div>
     </footer>

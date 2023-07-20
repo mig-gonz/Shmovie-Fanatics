@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
-const GalleryItem = () => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   const apiKey = "api_key=55f130ea060d300d440fc9bf79c531c8";
-  const randomMovieSearch = `https://api.themoviedb.org/3/discover/movie?${apiKey}`;
+  const movieSearch = `https://api.themoviedb.org/3/movie/now_playing?${apiKey}`;
 
   useEffect(() => {
     const randomMovies = () => {
-      fetch(randomMovieSearch)
+      fetch(movieSearch)
         .then((res) => res.json())
         .then((data) => {
           setMovies(data.results);
@@ -18,9 +18,17 @@ const GalleryItem = () => {
     randomMovies();
   }, []);
 
+  const customScrollbarStyle = `
+    /* Hide the scrollbar */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  `;
+
   return (
     <div className="flex justify-center w-48 md:w-[32rem] lg:w-full m-auto">
       <div className="overflow-x-auto flex justify-center">
+        <style>{customScrollbarStyle}</style>
         <div className="flex space-x-4">
           {movies.splice(0, 5).map((movie: any) => (
             <div className="card" key={movie.id}>
@@ -41,4 +49,4 @@ const GalleryItem = () => {
     </div>
   );
 };
-export default GalleryItem;
+export default Movies;

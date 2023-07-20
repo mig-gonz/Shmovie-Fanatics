@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   return (
-    <div className="mt-5 w-screen h-[32rem]">
+    <div className="mt-5 w-full h-[32rem]">
       <div
         className="hero h-full w-full rounded-2xl"
         style={backgroundImageStyle}
@@ -15,10 +15,10 @@ const Header = () => {
         <div className="hero-overlay bg-opacity-60 rounded-2xl"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold header__content-color beautiful-header">
+            <h1 className="mb-5 text-5xl font-bold hero-header">
               Welcome to Shmovie Fanatics
             </h1>
-            <p className="mb-5">
+            <p className="mb-5 font-bold">
               Explore the world of movies with shmovie fanatics. Discover the
               latest releases, dive into your favorite genres, and stay
               up-to-date with the hottest trends in cinema. Join our community

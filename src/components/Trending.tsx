@@ -1,14 +1,14 @@
-import GalleryItem from "./GalleryItem";
+import TrendingItems from "./TrendingItems";
 import "../index.css";
 
-const Gallery = () => {
+const Trending = () => {
   return (
     <div>
       <div className="flex justify-center mt-6 mb-6">
         <h1 className="beautiful-header text-2xl">Trending Movies:</h1>
       </div>
-      <GalleryItem />
+      <TrendingItems />
     </div>
   );
 };
-export default Gallery;
+export default Trending;

@@ -14,3 +14,15 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hero-header {
+  background: -webkit-linear-gradient(
+    103.22deg,
+    #dbe6f6 -13.86%,
+    #c5796d 99.55%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
