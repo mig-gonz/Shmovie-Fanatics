@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 // make single card on mobile, add arrow button to see next movie for desktop and mobile.
 // reuse component, add different buttons for movie types and set to change state
 
@@ -8,6 +8,7 @@ const Display = () => {
     title: string;
     overview: string;
     backdrop_path: string;
+    id: number;
   };
 
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -22,6 +23,7 @@ const Display = () => {
         const response = await fetch(randomMovieSearch);
         const data = await response.json();
         setMovies(data.results);
+        console.log(data.results);
       } catch (error) {
         console.error("Error fetching random movies:", error);
       }
@@ -58,13 +60,15 @@ const Display = () => {
             className="rounded"
           />
           <div className="text-center w-full">
-            <h1 className="text-5xl font-bold">{randomTitle}</h1>
+            <h1 className="text-5xl hero-header font-bold">{randomTitle}</h1>
             {isMobile ? (
               <p></p>
             ) : (
               <p className="py-6 over-view">{randomContent}</p>
             )}
-            <button className="btn btn-primary mt-5">view more</button>
+            <Link to={`/movies/${randomMovie?.id}`}>
+              <button className="btn btn-primary mt-5">view more</button>
+            </Link>
           </div>
         </div>
       </div>

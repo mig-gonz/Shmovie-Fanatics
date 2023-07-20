@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer footer-center p-4 text-base-content">
       <div className="text-center py-4">
         <p className="text-white">
-          &copy; {new Date().getFullYear()} SHMOVIE FANATICS {""}
+          &copy; {new Date().getFullYear()} SHMOVIE FANATICS
         </p>
         <a
           href="https://github.com/mig-gonz"

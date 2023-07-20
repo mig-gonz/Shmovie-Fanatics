@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const GalleryItem = () => {
   const [movies, setMovies] = useState([]);
@@ -32,16 +33,18 @@ const GalleryItem = () => {
         <div className="flex space-x-4">
           {movies.splice(0, 5).map((movie: any) => (
             <div className="card" key={movie.id}>
-              <figure className="w-48 xl:w-52 h-72 relative rounded-lg border-2 border-x-gray-400">
-                <img
-                  className="h-full w-full object-cover"
-                  src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
-                  alt={movie.title}
-                />
-                <h2 className="card-title h-20 absolute bottom-0 left-0 right-0 p-4 text-white bg-black bg-opacity-50">
-                  {movie.title}
-                </h2>
-              </figure>
+              <Link to={`/movies/${movie.id}`}>
+                <figure className="w-48 xl:w-52 h-72 relative rounded-lg border-2 border-x-gray-400">
+                  <img
+                    className="h-full w-full object-cover"
+                    src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
+                    alt={movie.title}
+                  />
+                  <h2 className="card-title h-20 absolute bottom-0 left-0 right-0 p-4 text-white bg-black bg-opacity-50">
+                    {movie.title}
+                  </h2>
+                </figure>
+              </Link>
             </div>
           ))}
         </div>
