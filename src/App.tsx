@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Details from "./pages/Details";
 import Footer from "./components/Footer";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies/:id" element={<Details />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </Router>
