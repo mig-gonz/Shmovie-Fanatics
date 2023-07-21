@@ -14,6 +14,15 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.background {
+  background: -webkit-linear-gradient(
+    103.22deg,
+    #7b0bf3 -13.86%,
+    #ce6c38 99.55%
+  );
+}
+
 .hero-header {
   background: -webkit-linear-gradient(
     103.22deg,

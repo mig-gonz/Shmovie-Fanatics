@@ -9,6 +9,7 @@ const Display = () => {
     overview: string;
     backdrop_path: string;
     id: number;
+    poster_path: string;
   };
 
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -50,21 +51,34 @@ const Display = () => {
   const randomTitle = randomMovie?.title || "";
   const randomContent = randomMovie?.overview || "";
   const backdropPath = randomMovie?.backdrop_path || "";
+  const posterPath = randomMovie?.poster_path || "";
+
+  const maxCharacters: number = 255;
 
   return (
-    <div className="flex justify-center h-[32rem] mt-8">
+    <div className="flex justify-center h-[32rem] mt-12">
       <div className="w-full w-5/6 h-full">
         <div className="hero-content m-auto flex-col lg:flex-row h-full">
           <img
-            src={`https://image.tmdb.org/t/p/w500${backdropPath}`}
-            className="rounded"
+            src={`https://image.tmdb.org/t/p/w500${posterPath}`}
+            className="rounded h-80 lg:h-full"
           />
-          <div className="text-center w-full">
-            <h1 className="text-5xl hero-header font-bold">{randomTitle}</h1>
+          <div className="text-center">
+            <h1 className="text-5xl hero-header w-96 text-center font-bold">
+              {randomTitle}
+            </h1>
             {isMobile ? (
               <p></p>
             ) : (
-              <p className="py-6 over-view">{randomContent}</p>
+              <div className="w-72 m-auto mt-2">
+                <div className="divider w-5/6 m-auto"></div>
+                <p className="over-view">
+                  {randomContent.length > maxCharacters
+                    ? `${randomContent.substring(0, maxCharacters)}...`
+                    : randomContent}
+                </p>
+                <div className="divider w-5/6 m-auto"></div>
+              </div>
             )}
             <Link to={`/movies/${randomMovie?.id}`}>
               <button className="btn btn-primary mt-5">view more</button>

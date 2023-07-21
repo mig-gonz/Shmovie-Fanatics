@@ -29,11 +29,12 @@ const Details = () => {
   }, []);
 
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
+    <div className="card lg:card-side bg-base-100 shadow-xl border-x-4 border-purple-950">
       <figure>
         <img
           src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
           alt="Album"
+          className="ml-4"
         />
       </figure>
       <div className="card-body">

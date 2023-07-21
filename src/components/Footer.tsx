@@ -3,7 +3,7 @@ import "../index.css";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-4 text-base-content">
+    <footer className="footer footer-center p-4 text-base-content border-x-4 border-purple-950">
       <div className="text-center py-4">
         <p className="text-white">
           &copy; {new Date().getFullYear()} SHMOVIE FANATICS

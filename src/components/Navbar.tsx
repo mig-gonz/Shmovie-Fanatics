@@ -3,13 +3,16 @@ import logo from "../assets/clapperboard.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 border-x-4 border-purple-950">
       <div className="flex-1">
         <a href="/">
           <span className="sr-only">Shmovie Fanatics</span>
           <img className="h-8 w-auto ml-4" src={logo} alt="logo" />
         </a>
-        <a className="btn btn-ghost normal-case md:text-xl lg:text-2xl beautiful-header">
+        <a
+          href="/"
+          className="btn btn-ghost normal-case md:text-xl lg:text-2xl beautiful-header"
+        >
           Shmovie Fanatics
         </a>
       </div>

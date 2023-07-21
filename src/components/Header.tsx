@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   return (
-    <div className="mt-5 w-full h-[32rem]">
+    <div className="w-full h-[32rem]">
       <div
         className="hero h-full w-full rounded-2xl"
         style={backgroundImageStyle}
