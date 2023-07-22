@@ -11,7 +11,7 @@ const Navbar = () => {
         </a>
         <a
           href="/"
-          className="btn btn-ghost normal-case md:text-xl lg:text-2xl beautiful-header"
+          className="btn btn-ghost normal-case md:text-xl lg:text-2xl beautiful-header font-serif md:uppercase lg:uppercase"
         >
           Shmovie Fanatics
         </a>

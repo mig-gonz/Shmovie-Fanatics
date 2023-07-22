@@ -1,7 +1,9 @@
+import Info from "../components/Info";
+
 const About = () => {
   return (
     <div>
-      <h1>hello world</h1>
+      <Info />
     </div>
   );
 };

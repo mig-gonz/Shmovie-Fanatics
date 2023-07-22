@@ -31,15 +31,16 @@ const Movies = () => {
       <div className="overflow-x-auto flex justify-center">
         <style>{customScrollbarStyle}</style>
         <div className="flex space-x-4">
-          {movies.splice(0, 5).map((movie: any) => (
-            <div className="card" key={movie.id}>
+          {movies.slice(0, 5).map((movie: any) => (
+            <div className="relative group" key={movie.id}>
               <Link to={`/movies/${movie.id}`}>
-                <figure className="w-48 xl:w-52 h-72 relative rounded-lg border-2 border-x-gray-400">
+                <figure className="w-48 xl:w-52 h-72 relative rounded-lg border-2 border-x-gray-400 overflow-hidden">
                   <img
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-300"
                     src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                     alt={movie.title}
                   />
+                  <div className="absolute inset-0 bg-gradient-to-b from-purple-900 via-purple-950 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                   <h2 className="card-title h-20 absolute bottom-0 left-0 right-0 p-4 text-white bg-black bg-opacity-50">
                     {movie.title}
                   </h2>

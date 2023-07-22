@@ -15,8 +15,8 @@ const Header = () => {
         <div className="hero-overlay bg-opacity-60 rounded-2xl"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold hero-header">
-              Welcome to Shmovie Fanatics
+            <h1 className="mb-5 text-5xl font-bold hero-header font-mono">
+              WELCOME TO SHMOVIE FANATICS
             </h1>
             <p className="mb-5 font-bold">
               Explore the world of movies with shmovie fanatics. Discover the
@@ -26,7 +26,6 @@ const Header = () => {
               you're a casual viewer or a hardcore cinephile, shmovie fanatics
               is your ultimate destination for all things movies.
             </p>
-            {/* <button className="btn btn-primary">Get Started</button> */}
           </div>
         </div>
       </div>

@@ -22,12 +22,26 @@
     #ce6c38 99.55%
   );
 }
-
 .hero-header {
   background: -webkit-linear-gradient(
     103.22deg,
     #dbe6f6 -13.86%,
-    #c5796d 99.55%
+    #c6ffdd 30%,
+    /* New color stop at 30% */ #fbd786 70%,
+    /* New color stop at 70% */ #f7797d 99.55%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info-header {
+  background: -webkit-linear-gradient(
+    103.22deg,
+    #0f2027 -13.86%,
+    #2c5364 99.55%
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;

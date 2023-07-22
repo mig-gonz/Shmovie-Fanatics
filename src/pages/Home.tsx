@@ -1,6 +1,6 @@
 import Display from "../components/Display";
 import Trending from "../components/Trending";
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 import NowPlaying from "../components/NowPlaying";
 
 // add fonts for all text
@@ -9,7 +9,7 @@ import NowPlaying from "../components/NowPlaying";
 const Home = () => {
   return (
     <div className="border-x-4 border-purple-950">
-      <Header />
+      <Hero />
       <Trending />
       <Display />
       <NowPlaying />
