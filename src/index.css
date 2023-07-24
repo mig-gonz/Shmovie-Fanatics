@@ -27,8 +27,8 @@
     103.22deg,
     #dbe6f6 -13.86%,
     #c6ffdd 30%,
-    /* New color stop at 30% */ #fbd786 70%,
-    /* New color stop at 70% */ #f7797d 99.55%
+    #fbd786 70%,
+    #f7797d 99.55%
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;

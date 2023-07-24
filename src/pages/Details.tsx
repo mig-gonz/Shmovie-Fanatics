@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 
 const Details = () => {
   type Movie = {
+    overview: string;
+    title: string;
     backdrop_path: string;
     original_title: string;
     poster_path: string;
@@ -31,7 +33,7 @@ const Details = () => {
   }, []);
 
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl border-x-4 border-purple-950">
+    <div className="card lg:card-side bg-base-100 border-x-4 border-purple-950">
       <figure>
         <img
           src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
@@ -40,10 +42,12 @@ const Details = () => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">New album is released!</h2>
-        <p>Click the button to listen on Spotiwhy app.</p>
+        <h2 className="card-title">{movie?.title}</h2>
+        <p className="w-96"></p>
+        <p className="w-96"></p>
+        <p className="w-96">{movie?.overview}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Listen</button>
+          <button className="btn btn-primary">Trailer</button>
         </div>
       </div>
     </div>

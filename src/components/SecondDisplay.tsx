@@ -53,7 +53,7 @@ const SecondDisplay = () => {
   const maxCharacters: number = 255;
 
   return (
-    <div className="flex justify-center h-[32rem] mt-12">
+    <div className="flex justify-center h-[32rem] mt-8">
       <div className="h-full">
         <div className="hero-content m-auto flex-col lg:flex-row-reverse h-full">
           <img
