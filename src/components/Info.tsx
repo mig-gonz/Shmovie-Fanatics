@@ -74,13 +74,13 @@ const Info = () => {
               </dl>
             </div>
           </div>
-          <img
-            src={profile}
-            alt="profile screen shot"
-            className="rounded-xl"
-            // width={2432}
-            // height={1442}
-          />
+          <a href="https://github.com/mig-gonz" target="_blank">
+            <img
+              src={profile}
+              alt="profile screen shot"
+              className="rounded-xl border-2 border-purple-950"
+            />
+          </a>
         </div>
       </div>
     </div>

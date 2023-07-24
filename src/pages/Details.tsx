@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 
+// grab reviews from  https://api.themoviedb.org/3/movie/movie_id/reviews?
+
 const Details = () => {
   type Movie = {
     backdrop_path: string;

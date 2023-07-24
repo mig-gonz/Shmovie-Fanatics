@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Display = () => {
+const SecondDisplay = () => {
   type Movie = {
     title: string;
     overview: string;
@@ -55,10 +55,10 @@ const Display = () => {
   return (
     <div className="flex justify-center h-[32rem] mt-12">
       <div className="h-full">
-        <div className="hero-content m-auto flex-col lg:flex-row h-full">
+        <div className="hero-content m-auto flex-col lg:flex-row-reverse h-full">
           <img
             src={`https://image.tmdb.org/t/p/w500${posterPath}`}
-            className="rounded h-80 lg:h-full"
+            className="rounded h-80 lg:h-full w-80 lg:w-full"
           />
           <div className="text-center">
             <h1 className="text-5xl hero-header w-96 text-center font-bold font-mono">
@@ -87,4 +87,4 @@ const Display = () => {
   );
 };
 
-export default Display;
+export default SecondDisplay;

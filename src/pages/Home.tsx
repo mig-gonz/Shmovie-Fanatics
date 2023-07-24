@@ -2,9 +2,7 @@ import Display from "../components/Display";
 import Trending from "../components/Trending";
 import Hero from "../components/Hero";
 import NowPlaying from "../components/NowPlaying";
-
-// add fonts for all text
-// change the name of the banner and add an about page, move banner there
+import SecondDisplay from "../components/SecondDisplay";
 
 const Home = () => {
   return (
@@ -13,6 +11,8 @@ const Home = () => {
       <Trending />
       <Display />
       <NowPlaying />
+      <div className="divider w-5/6 m-auto"></div>
+      <SecondDisplay />
       <div className="divider w-5/6 m-auto"></div>
     </div>
   );
