@@ -58,7 +58,7 @@ const SecondDisplay = () => {
         <div className="hero-content m-auto flex-col lg:flex-row-reverse h-full">
           <img
             src={`https://image.tmdb.org/t/p/w500${posterPath}`}
-            className="rounded h-80 lg:h-full w-80 lg:w-full"
+            className="rounded h-80 lg:h-full"
           />
           <div className="text-center">
             <h1 className="text-5xl hero-header w-96 text-center font-bold font-mono">

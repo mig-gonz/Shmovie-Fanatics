@@ -19,12 +19,10 @@ const Header = () => {
               WELCOME TO SHMOVIE FANATICS
             </h1>
             <p className="mb-5 font-bold">
-              Explore the world of movies with shmovie fanatics. Discover the
-              latest releases, dive into your favorite genres, and stay
-              up-to-date with the hottest trends in cinema. Join our community
-              of movie enthusiasts and share your passion for films. Whether
-              you're a casual viewer or a hardcore cinephile, shmovie fanatics
-              is your ultimate destination for all things movies.
+              Welcome to shmovie fanatics! Your one-stop movie destination.
+              Discover the latest releases, explore genres, and indulge in your
+              passion for all things movies. Whether you're a casual viewer or a
+              dedicated cinephile, dive into the world of cinema with us!
             </p>
           </div>
         </div>

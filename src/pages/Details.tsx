@@ -34,20 +34,22 @@ const Details = () => {
 
   return (
     <div className="card lg:card-side bg-base-100 border-x-4 border-purple-950">
-      <figure>
-        <img
-          src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
-          alt="Album"
-          className="ml-4"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{movie?.title}</h2>
-        <p className="w-96"></p>
-        <p className="w-96"></p>
-        <p className="w-96">{movie?.overview}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Trailer</button>
+      <div className=" lg:flex m-auto">
+        <figure>
+          <img
+            src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
+            alt="Album"
+            className="ml-4 w-[200px] lg:w-[500px] "
+          />
+        </figure>
+        <div className="card-body ">
+          <h2 className="card-title m-auto">{movie?.title}</h2>
+          <p className="w-96"></p>
+          <p className="w-96"></p>
+          <p className="w-48 lg:w-96 m-auto text-center">{movie?.overview}</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary m-auto">Trailer</button>
+          </div>
         </div>
       </div>
     </div>
