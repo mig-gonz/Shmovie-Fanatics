@@ -17,9 +17,9 @@ coming soon...
 - View detailed information about a specific movie
 - Click on a movie to go to its detail page
 
-## tech stack
+## Technologies Used
 
-React.js | TypeScript
+React.js | TypeScript | DaisyUi | tailwindcss
 
 ## Contributing
 
