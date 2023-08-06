@@ -13,8 +13,7 @@ const SecondDisplay = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [isMobile, setIsMobile] = useState(false);
 
-  const apiKey = "api_key=55f130ea060d300d440fc9bf79c531c8";
-  const randomMovieSearch = `https://api.themoviedb.org/3/discover/movie?${apiKey}`;
+  const randomMovieSearch = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     const fetchRandomMovies = async () => {

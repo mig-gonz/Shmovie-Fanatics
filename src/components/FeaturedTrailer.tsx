@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 
 const FeaturedTrailer = () => {
   const [trailer, setTrailer] = useState("");
-  const API_KEY = `api_key=55f130ea060d300d440fc9bf79c531c8`;
 
   useEffect(() => {
     const movieTrailer = async () => {
       try {
         const response = await fetch(
-          `https://api.themoviedb.org/3/movie/385687/videos?${API_KEY}`
+          `https://api.themoviedb.org/3/movie/385687/videos?api_key=${process.env.REACT_APP_API_KEY}`
         );
         const data = response.json();
         console.log(data);

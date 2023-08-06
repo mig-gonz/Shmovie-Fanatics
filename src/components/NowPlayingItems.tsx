@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 const Movies = () => {
   const [movies, setMovies] = useState([]);
 
-  const apiKey = "api_key=55f130ea060d300d440fc9bf79c531c8";
-  const movieSearch = `https://api.themoviedb.org/3/movie/now_playing?${apiKey}`;
+  const movieSearch = `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     const randomMovies = () => {

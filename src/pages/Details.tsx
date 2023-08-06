@@ -19,8 +19,7 @@ const Details = () => {
   const [movie, setMovie] = useState<Movie | null>(null);
   const { id } = useParams();
 
-  const apiKey = "api_key=55f130ea060d300d440fc9bf79c531c8";
-  const movieSearch = `https://api.themoviedb.org/3/movie/${id}?${apiKey}`;
+  const movieSearch = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     const moviesById = () => {
