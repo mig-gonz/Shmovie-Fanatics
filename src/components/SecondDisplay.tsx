@@ -22,7 +22,6 @@ const SecondDisplay = () => {
         const response = await fetch(randomMovieSearch);
         const data = await response.json();
         setMovies(data.results);
-        // console.log(data.results);
       } catch (error) {
         console.error("Error fetching random movies:", error);
       }
@@ -61,7 +60,7 @@ const SecondDisplay = () => {
             className="rounded h-80 lg:h-full"
           />
           <div className="text-center">
-            <h1 className="text-5xl hero-header w-96 text-center font-bold font-mono">
+            <h1 className="md:text-5xl text-3xl hero-header w-96 text-center font-bold font-mono">
               {randomTitle}
             </h1>
             {isMobile ? (
