@@ -34,13 +34,13 @@ const Details = () => {
   }, []);
 
   return (
-    <div className=" flex bg-base-100 border-x-4 border-purple-950">
-      <div className=" lg:flex m-auto">
-        <figure>
+    <div className="flex bg-base-100 border-x-4 border-purple-950">
+      <div className="lg:flex m-auto">
+        <figure className="flex justify-center">
           <img
             src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
             alt="Album"
-            className="ml-4 w-[200px] lg:w-[500px] "
+            className="w-[200px] lg:w-[500px]"
           />
         </figure>
         <div className="ml-5 flex flex-col justify-center items-center">
