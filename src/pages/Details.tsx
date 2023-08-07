@@ -34,7 +34,7 @@ const Details = () => {
   }, []);
 
   return (
-    <div className="flex bg-base-100 border-x-4 border-purple-950">
+    <div className="flex bg-base-100 border-x-4 border-purple-950 back">
       <div className="lg:flex m-auto">
         <figure className="flex justify-center">
           <img
